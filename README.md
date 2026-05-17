@@ -195,8 +195,10 @@ The project is equipped with a full test suite. Below are the verified terminal 
 **1. AST/DST Rewriting Diff Preview**
 ![AST Rewriting Diff](assets/ast-diff.png)
 
+
 **2. OpenTelemetry Compile-Time Build Pipeline**
 ![Compile-Time Build Pipeline](assets/build-pipeline.png)
+
 
 **3. Live Distributed Trace Output (Microservice Demo)**
 ![Runtime Trace JSON](assets/runtime-trace.png)
@@ -205,6 +207,7 @@ The project is equipped with a full test suite. Below are the verified terminal 
 
 **4. Rule Engine Schema Validation**
 ![Rule Validation](assets/rule-validation.png)
+
 
 ### Test Suite Execution
 ```powershell
