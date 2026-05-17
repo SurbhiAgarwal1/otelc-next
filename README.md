@@ -198,7 +198,10 @@ The project is equipped with a full test suite. Below are the verified terminal 
 **2. OpenTelemetry Compile-Time Build Pipeline**
 ![Compile-Time Build Pipeline](assets/build-pipeline.png)
 
-**3. Rule Engine Schema Validation**
+**3. Live Distributed Trace Output (Microservice Demo)**
+![Runtime Trace JSON](assets/runtime-trace.png)
+
+**4. Rule Engine Schema Validation**
 ![Rule Validation](assets/rule-validation.png)
 
 ### Test Suite Execution
