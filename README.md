@@ -192,10 +192,13 @@ The project is equipped with a full test suite. Below are the verified terminal 
 
 ### In Action
 
-**1. OpenTelemetry Compile-Time Build Pipeline**
+**1. AST/DST Rewriting Diff Preview**
+![AST Rewriting Diff](assets/ast-diff.png)
+
+**2. OpenTelemetry Compile-Time Build Pipeline**
 ![Compile-Time Build Pipeline](assets/build-pipeline.png)
 
-**2. Rule Engine Schema Validation**
+**3. Rule Engine Schema Validation**
 ![Rule Validation](assets/rule-validation.png)
 
 ### Test Suite Execution
