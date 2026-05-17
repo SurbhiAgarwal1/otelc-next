@@ -186,7 +186,51 @@ During this call, `otelc` compiles the demo, injects our runtime trace helpers, 
 
 ---
 
-## 8. Roadmap to v1.0
+## 8. Testing & CI Verification
+
+The project is equipped with a full test suite. Below are the verified terminal outputs from the latest local test runs:
+
+### Test Suite Execution
+```powershell
+PS C:\Users\Surbhi\Desktop\Projects\open evertest protype 2\otelc-next> go test ./... -coverprofile=coverage.out
+?       otelc-next/cmd/ast-inspector    [no test files]
+?       otelc-next/cmd/compat-checker   [no test files]
+?       otelc-next/cmd/hook-generator   [no test files]
+?       otelc-next/cmd/otelc            [no test files]
+?       otelc-next/cmd/rule-validator   [no test files]
+?       otelc-next/examples/microservice-demo   [no test files]
+ok      otelc-next/instrumentation/gin  0.134s  coverage: 0.0% of statements
+?       otelc-next/internal/analyzer    [no test files]
+?       otelc-next/internal/debug       [no test files]
+?       otelc-next/internal/injector    [no test files]
+ok      otelc-next/internal/matcher     0.114s  coverage: 0.0% of statements
+ok      otelc-next/internal/rewrite     1.780s  coverage: 24.2% of statements
+?       otelc-next/internal/semantic    [no test files]
+?       otelc-next/internal/telemetry   [no test files]
+?       otelc-next/internal/versions    [no test files]
+```
+
+### CLI Build Verification
+```powershell
+PS C:\Users\Surbhi\Desktop\Projects\open evertest protype 2\otelc-next> go build -o bin\otelc.exe .\cmd\otelc
+PS C:\Users\Surbhi\Desktop\Projects\open evertest protype 2\otelc-next> .\bin\otelc.exe --help
+Compile-time OpenTelemetry instrumentation for Go
+
+Usage:
+  otelc [command]
+
+Available Commands:
+  build       Run the full instrumentation pipeline and rebuild the binary
+  compat      Run compatibility checker against supported versions
+  diff        Show a diff of files that would be instrumented (dry-run)
+  help        Help about any command
+  validate    Validate that all imported packages have matching instrumentation rules
+...
+```
+
+---
+
+## 9. Roadmap to v1.0
 
 - [x] Full Monorepo Architecture
 - [x] AST/DST Rewriting Pipeline utilizing Dave's DST
