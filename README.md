@@ -190,6 +190,14 @@ During this call, `otelc` compiles the demo, injects our runtime trace helpers, 
 
 The project is equipped with a full test suite. Below are the verified terminal outputs from the latest local test runs:
 
+### In Action
+
+**1. OpenTelemetry Compile-Time Build Pipeline**
+![Compile-Time Build Pipeline](assets/build-pipeline.png)
+
+**2. Rule Engine Schema Validation**
+![Rule Validation](assets/rule-validation.png)
+
 ### Test Suite Execution
 ```powershell
 PS C:\Users\Surbhi\Desktop\Projects\open evertest protype 2\otelc-next> go test ./... -coverprofile=coverage.out
