@@ -200,6 +200,8 @@ The project is equipped with a full test suite. Below are the verified terminal 
 
 **3. Live Distributed Trace Output (Microservice Demo)**
 ![Runtime Trace JSON](assets/runtime-trace.png)
+<img width="1296" height="901" alt="Screenshot 2026-05-17 175743" src="https://github.com/user-attachments/assets/f7eb9c74-2d7c-486a-9a21-cc25b1cef7b9" />
+
 
 **4. Rule Engine Schema Validation**
 ![Rule Validation](assets/rule-validation.png)
